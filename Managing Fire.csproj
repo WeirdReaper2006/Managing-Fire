@@ -67,7 +67,6 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Pages\About.html" />
     <Content Include="Pages\Counter-Measures.html" />
     <Content Include="Pages\Factors.html" />
     <Content Include="Pages\Home.html" />

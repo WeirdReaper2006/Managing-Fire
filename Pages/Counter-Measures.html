@@ -4,7 +4,99 @@
     <meta charset="utf-8" />
     <title></title>
 </head>
-<body>
-
+<body style="background: #305167; background: linear-gradient(270deg, #305167, #1C9B8B);">
+    <header>
+        <div style="background-color: #333; color: #fff; display: flex; justify-content: space-between; align-items: center; padding: 10px 20px;" class="navbar">
+            <a href="Home.html">
+                <img src="https://assets.spaceappschallenge.org/media/images/SpaceAppsLogo_Default_2ColorWhi.width-440.jpegquality-60.png" width="220" height="87" />
+            </a>
+            <h1 style="font-family: 'Arial', sans-serif;">Save the trees</h1>
+            <div onclick="toggleNav()" style="cursor: pointer; display: flex; flex-direction: column; align-items: center;">
+                <div style="background-color: #fff; height: 3px; width: 25px; margin: 3px 0;"></div>
+                <div style="background-color: #fff; height: 3px; width: 25px; margin: 3px 0;"></div>
+                <div style="background-color: #fff; height: 3px; width: 25px; margin: 3px 0;"></div>
+            </div>
+            <nav id="nav-links" style="display: none; flex-direction: column; background-color: #333; position: absolute; top: 120px; right: 0; width: 200px; padding: 20px;">
+                <ul style="list-style-type: none; padding: 0; margin: 0;">
+                    <li style="margin-bottom: 10px; text-align: left;"><a href="Home.html" style="text-decoration: none; color: #fff; font-weight: bold;">Home</a></li>
+                    <li style="margin-bottom: 10px; text-align: left;"><a href="Factors.html" style="text-decoration: none; color: #fff; font-weight: bold;">Factors</a></li>
+                    <li style="margin-bottom: 10px; text-align: left;"><a href="Impacts.html" style="text-decoration: none; color: #fff; font-weight: bold;">Impacts</a></li>
+                    <li style="margin-bottom: 10px; text-align: left;"><a href="Counter-Measures.html" style="text-decoration: none; color: #fff; font-weight: bold;">Counter-Measures</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <div style="padding:70px; color:#000000; font-size:30px; font-family: 'Arial', sans-serif;">
+        <h1>Introduction</h1>
+        <p>
+            Our project aims to develop an advanced wildfire detection system that will be integrated into satellites for monitoring high-risk wildfire-prone regions, such as Australia and the USA. This system will not only detect the presence of wildfires but also provide critical information about their causes and environmental impacts. Additionally, it will feature capabilities to assess soil erosion and water contamination, ensuring a holistic approach to wildfire management and environmental protection.
+        </p>
+        <h1>Key Features</h1>
+        <ol>
+            <li>WildFire Detection:</li>
+            <ul>
+                <li>The core functionality of our system is to detect wildfires in real-time using advanced sensors and imaging technology.</li>
+                <li>It will employ cutting-edge algorithms and machine learning to identify the presence of fires, even in remote and densely forested areas.</li>
+                <li>The system will continuously monitor these regions, providing early warnings to authorities for rapid response and containment.</li>
+            </ul>
+            <li>Cause Analysis:</li>
+            <ul>
+                <li>Our system goes beyond mere detection; it will also analyze and report the causes of wildfires. This includes human activities, lightning strikes, or other natural phenomena.</li>
+                <li>Understanding the root causes is crucial for implementing preventative measures and policy changes.</li>
+            </ul>
+            <li>Environmental Impact Assessment:</li>
+            <ul>
+                <li>The wildfire detection system will assess the environmental impact of fires by analyzing factors such as smoke composition, heat distribution, and affected ecosystems.</li>
+                <li>This data will enable authorities to assess the severity of the situation and prioritize response efforts.</li>
+            </ul>
+            <li>Soil Erosion Monitoring:</li>
+            <ul>
+                <li>To address the aftermath of wildfires, our system will include a soil erosion monitoring feature.</li>
+                <li>By tracking changes in soil conditions, it will help predict and mitigate erosion risks, protecting valuable topsoil.</li>
+            </ul>
+            <li>Water Contamination Detection:</li>
+            <ul>
+                <li>Wildfires can lead to water contamination, posing health risks to communities and ecosystems.</li>
+                <li>Our system will incorporate sensors to identify water sources at risk and detect contaminants, ensuring timely water quality assessment.</li>
+            </ul>
+        </ol>
+        <h1>Benefits</h1>
+        <ol>
+            <li>Enhanced Wildfire Detection:</li>
+            <ul>
+                <li>Our system provides critical data for efficient wildfire management, aiding in early response, containment, and resource allocation.</li>
+            </ul>
+            <li>Environmental Conservation:</li>
+            <ul>
+                <li>By assessing environmental impacts, soil erosion, and water quality, we contribute to the protection and preservation of ecosystems.</li>
+            </ul>
+            <li>Data-Driven Decision Making:</li>
+            <ul>
+                <li>The collected data empowers decision-makers with valuable insights for policy formulation and resource allocation.</li>
+            </ul>
+            <li>Public Safety:</li>
+            <ul>
+                <li>Timely information on wildfire locations and causes enhances public safety and allows for evacuation planning.</li>
+            </ul>
+            <li>Cost Savings:</li>
+            <ul>
+                <li>By preventing and mitigating wildfires more effectively, our system can reduce the economic burden of wildfire damage.</li>
+            </ul>
+        </ol>
+    </div>
 </body>
 </html>
+
+<script>
+    function toggleNav() {
+        const navLinks = document.getElementById('nav-links');
+        navLinks.style.display = navLinks.style.display === 'none' ? 'flex' : 'none';
+    }
+</script>
+
+<style>
+    * {
+        padding: 0px;
+        box-sizing: border-box;
+    }
+</style>

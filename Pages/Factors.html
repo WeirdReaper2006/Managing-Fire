@@ -4,7 +4,66 @@
     <meta charset="utf-8" />
     <title></title>
 </head>
-<body>
-
+<body style="background: #305167; background: linear-gradient(270deg, #305167, #1C9B8B);">
+    <header>
+        <div style="background-color: #333; color: #fff; display: flex; justify-content: space-between; align-items: center; padding: 10px 20px;" class="navbar">
+            <a href="Home.html">
+                <img src="https://assets.spaceappschallenge.org/media/images/SpaceAppsLogo_Default_2ColorWhi.width-440.jpegquality-60.png" width="220" height="87" />
+            </a>
+            <h1 style="font-family: 'Arial', sans-serif;">Save the trees</h1>
+            <div onclick="toggleNav()" style="cursor: pointer; display: flex; flex-direction: column; align-items: center;">
+                <div style="background-color: #fff; height: 3px; width: 25px; margin: 3px 0;"></div>
+                <div style="background-color: #fff; height: 3px; width: 25px; margin: 3px 0;"></div>
+                <div style="background-color: #fff; height: 3px; width: 25px; margin: 3px 0;"></div>
+            </div>
+            <nav id="nav-links" style="display: none; flex-direction: column; background-color: #333; position: absolute; top: 120px; right: 0; width: 200px; padding: 20px;">
+                <ul style="list-style-type: none; padding: 0; margin: 0;">
+                    <li style="margin-bottom: 10px; text-align: left;"><a href="Home.html" style="text-decoration: none; color: #fff; font-weight: bold;">Home</a></li>
+                    <li style="margin-bottom: 10px; text-align: left;"><a href="Factors.html" style="text-decoration: none; color: #fff; font-weight: bold;">Factors</a></li>
+                    <li style="margin-bottom: 10px; text-align: left;"><a href="Impacts.html" style="text-decoration: none; color: #fff; font-weight: bold;">Impacts</a></li>
+                    <li style="margin-bottom: 10px; text-align: left;"><a href="Counter-Measures.html" style="text-decoration: none; color: #fff; font-weight: bold;">Counter-Measures</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <div style="padding: 70px; font-size: 30px;">
+        <p style="font-family: 'Arial', sans-serif;">
+            In recent years, stories of widespread wildfires are impossible to miss in climate change-related news. Unprecedented fires have destroyed millions of hectares of land, displaced hundreds of thousands of people, and eliminated entire habitats across the world. We take a look at what causes wildfires and what we can do to prevent them.
+        </p>
+        <h1>Natural Causes of Wildfires</h1>
+        <p style="font-family: 'Arial', sans-serif;">
+            Lightning is the most common ignition source that causes the vast majority of wildfires. There are two types of lightning: cold and hot. Cold lightning is usually of short duration and thus rarely a cause of wildfires. The same cannot be said of hot lightning: currents in hot lightning have less voltage but occur for a longer period of time. Because of the intense heat it generates, hot lightning accounts for the majority of natural fires. While this natural phenomenon is completely unpredictable, adequate land management and landscape fire management planning can significantly diminish the intensity of wildfires and prevent unnecessary deaths and the displacement of people and animals.
+        </p>
+        <p style="font-family: 'Arial', sans-serif;">
+            Climate change is undoubtedly the biggest trigger of extreme lightning storms. Warmer and longer summers heat up the land surface. This, coupled with an increase in carbon emissions, causes stronger updrafts that are more likely to produce more powerful and frequent lightning. A 2014 study estimates a 12% increase in the frequency of lightning strikes with every one degree Celsius increase in temperature.
+        </p>
+        <p style="font-family: 'Arial', sans-serif;">
+            In Canada’s province of British Columbia, for example, hot lightning causes 60% of the region’s wildfires in an average year. The devastating and record-breaking 2020 Bay Area fire that destroyed 5 million acres of land, over 10,000 structures and killed 33 people was also a consequence of lightning storms. These hit the state following two intense heat waves which saw record high temperatures all over the west coast occurring over multiple days.
+        </p>
+        <p style="font-family: 'Arial', sans-serif;">
+            As mentioned before, fuel is one of the three components needed for a wildfire to start. This often comes in the form of dry vegetation. Elevated temperatures and low winter-time precipitation often leave vegetation primed for wildfires. This was the case in California in 2021, which experienced a 65% rise in dry vegetation in just a few months. Similarly, several parts of Australia are characterised as a hot and dry climate and have recorded a steady decline in rainfall since 1970, making wildfires a regular occurrence. 2019 was the warmest year on record and it was accompanied by 43 extremely warm days. Not coincidentally, in the same year, the country experienced a bushfire crisis that resulted in the destruction of 11 million hectares of bush, forest, and parks in the states of New South Wales and Victoria.
+        </p>
+        <h1>Human Induced WildFires</h1>
+        <p style="font-family: 'Arial', sans-serif;">
+            Humans are also often responsible for initiating wildfires, either accidentally or intentionally.  Human-related events that can ignite fires range from open burning such as campfires, equipment failure, and the malfunction of engines to debris burning, negligent discarding of cigarettes on dry grounds as well as other intentional acts of arson. The latter accounts for one of the most common causes of wildfires.
+        </p>
+        <p style="font-family: 'Arial', sans-serif;">
+            According to government sources, 40% of wildfires that affect British Columbia in an average year are human-induced. In the US, the amount is more than double, with nearly 85% of the nearly 100,000 wildland fires that affect North America every year caused by human activities, according to data from the National Park Service. Here, man-made fires have tripled the length of North America’s fire seasons between 1992 and 2012, from 46 to 154 days. Over the 21-year study period, the major causes were debris burning and arson, while campfires and fireworks were responsible for ‘only’ 5% of fires. Furthermore, an analysis of more recent California fires found that human-sparked wildfires are more extreme and destructive than nature-induced ones as they move more than twice as fast, spreading about 1.83 kilometres per day.
+        </p>
+    </div>
 </body>
 </html>
+
+<script>
+    function toggleNav() {
+        const navLinks = document.getElementById('nav-links');
+        navLinks.style.display = navLinks.style.display === 'none' ? 'flex' : 'none';
+    }
+</script>
+
+<style>
+    * {
+        padding: 0px;
+        box-sizing: border-box;
+    }
+</style>

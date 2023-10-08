@@ -4,7 +4,72 @@
     <meta charset="utf-8" />
     <title></title>
 </head>
-<body>
-
+<body style="background: #305167; background: linear-gradient(270deg, #305167, #1C9B8B);">
+    <header>
+        <div style="background-color: #333; color: #fff; display: flex; justify-content: space-between; align-items: center; padding: 10px 20px;" class="navbar">
+            <a href="Home.html">
+                <img src="https://assets.spaceappschallenge.org/media/images/SpaceAppsLogo_Default_2ColorWhi.width-440.jpegquality-60.png" width="220" height="87" />
+            </a>
+            <h1 style="font-family: 'Arial', sans-serif;">Save the trees</h1>
+            <div onclick="toggleNav()" style="cursor: pointer; display: flex; flex-direction: column; align-items: center;">
+                <div style="background-color: #fff; height: 3px; width: 25px; margin: 3px 0;"></div>
+                <div style="background-color: #fff; height: 3px; width: 25px; margin: 3px 0;"></div>
+                <div style="background-color: #fff; height: 3px; width: 25px; margin: 3px 0;"></div>
+            </div>
+            <nav id="nav-links" style="display: none; flex-direction: column; background-color: #333; position: absolute; top: 120px; right: 0; width: 200px; padding: 20px;">
+                <ul style="list-style-type: none; padding: 0; margin: 0;">
+                    <li style="margin-bottom: 10px; text-align: left;"><a href="Home.html" style="text-decoration: none; color: #fff; font-weight: bold;">Home</a></li>
+                    <li style="margin-bottom: 10px; text-align: left;"><a href="Factors.html" style="text-decoration: none; color: #fff; font-weight: bold;">Factors</a></li>
+                    <li style="margin-bottom: 10px; text-align: left;"><a href="Impacts.html" style="text-decoration: none; color: #fff; font-weight: bold;">Impacts</a></li>
+                    <li style="margin-bottom: 10px; text-align: left;"><a href="Counter-Measures.html" style="text-decoration: none; color: #fff; font-weight: bold;">Counter-Measures</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <div style="padding:70px; color:#000000; font-size:30px; font-family: 'Arial', sans-serif;">
+        <p>
+            Wildfires are increasing around the globe in frequency, severity and duration, heightening the need to understand the health effects of wildfire exposure. The risk of wildfires grows in extremely dry conditions, such as drought, heat waves and during high winds.
+        </p>
+        <p>
+            Wildfire smoke is a mixture of hazardous air pollutants, such PM2.5, NO2, ozone, aromatic hydrocarbons, or lead. In addition to contaminating the air with toxic pollutants, wildfires also simultaneously impact the climate by releasing large quantities of carbon dioxide and other greenhouse gases into the atmosphere.
+        </p>
+        <p>
+            With climate change leading to warmer temperatures and drier conditions and the increasing urbanization of rural areas, the fire season is starting earlier and ending later. Wildfire events are getting more extreme in terms of acres burned, duration and intensity, and they can disrupt transportation, communications, water supply, and power and gas services.
+        </p>
+        <h1>Environmental Impacts</h1>
+        <p>
+            Wildfires are becoming more intense and more frequent, ravaging communities and ecosystems in their path. Recent years have seen record-breaking wildfire seasons across the world from Australia to the Arctic to North and South America. With global temperatures on the rise, the need to reduce wildfire risk is more critical than ever.
+        </p>
+        <p>
+            A new report, <strong><a href="https://wedocs.unep.org/bitstream/handle/20.500.11822/38372/wildfire_RRA.pdf" rel=" noopener" target="_blank" class="ext">Spreading like Wildfire: The Rising Threat of Extraordinary Landscape Fires</a></strong>, by UNEP and GRID-Arendal, finds that climate change and land-use change are making wildfires worse and anticipates a global increase of extreme fires even in areas previously unaffected. Uncontrollable and extreme wildfires can be devastating to people, biodiversity and ecosystems. They also exacerbate climate change, contributing significant greenhouse gasses to the atmosphere.
+        </p>
+        <p>
+            UNEP is issuing an urgent call to governments to rethink their approach to extreme wildfires. By calling for a new ‘Fire Ready Formula’ and recognizing the important role of ecosystem restoration, we can minimize the risk of extreme wildfires by being better prepared and building back better in their aftermath.
+        </p>
+        <h1>Impacts on Public Health</h1>
+        <p>
+            Wildfires that burn near populated areas can have significant impact on the environment, property, livestock and human mortality and morbidity depending on the size, speed and proximity to the fire, and whether the population has advanced warning to evacuate. Wildfire smoke is a mixture of air pollutants of which particulate matter (PM) is the principal public health threat.
+        </p>
+        <p>
+            PM2.5 from wildfire smoke is associated with premature deaths in the general population, and can cause and exacerbate diseases of the lungs, heart, brain/nervous system, skin, gut, kidney, eyes, nose and liver. It has also been shown to lead to cognitive impairment and memory loss. Firefighters and emergency response workers are also greatly impacted by injuries, burns and smoke inhalation, particularly at high concentrations.
+        </p>
+        <p>
+            More interdisciplinary research is warranted to understand the latent and long-term health effects of wildfire exposure on vulnerable populations (children, older people, pregnant people, chronically ill people), particularly for geographic areas enduring repeated and cyclical exposure to these wildﬁre events.
+        </p>
+    </div>
 </body>
 </html>
+
+<script>
+    function toggleNav() {
+        const navLinks = document.getElementById('nav-links');
+        navLinks.style.display = navLinks.style.display === 'none' ? 'flex' : 'none';
+    }
+</script>
+
+<style>
+    * {
+        padding: 0px;
+        box-sizing: border-box;
+    }
+</style>
